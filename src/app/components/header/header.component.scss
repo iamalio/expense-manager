@@ -1,0 +1,97 @@
+@import '../../../global/variables';
+@import '../../../global/grid';
+
+header {
+    margin-left: 220px;
+    padding: 20px;
+    background: #fff;
+
+    .search-area {
+        display: inline-block;
+        width: 50%;
+
+        .fa {
+            color: #7f8c8d;
+            margin-right: 8px;
+        }
+
+        input[type="text"] {
+            background: transparent;
+            width: 50%;
+            border: none;
+            font-size: 1rem;
+            color: #7f8c8d;
+            padding: 10px;
+            font-weight: 100;
+            border-radius: 5px;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background: $greyDark;
+            }
+        }
+    }
+
+    .user-area {
+        display: inline-block;
+        float: right;
+        padding: 8px;
+
+        a {
+            display: inline-block;
+            padding-right: 12px;
+            text-decoration: none;
+            color: #7f8c8d;
+            vertical-align: top;
+            height: 20px;
+
+            &.add {
+                font-size: 16px;
+                font-weight: 300;
+                padding-top: 8px;
+            }
+
+            &.notification {
+                position: relative;
+                font-size: 20px;
+                padding-top: 5px;
+
+                .circle {
+                    background: #3498db;
+                    color: #fff;
+                    width: 12px;
+                    height: 12px;
+                    font-size: 11px;
+                    text-align: center;
+                    position: absolute;
+                    top: -.5px;
+                    left: 7px;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+
+            .user-img {
+                background: url("../../../assets/img/matthew.png") center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                margin-right: 15px;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .fa-caret-down {
+                position: relative;
+                top: -5px;
+            }
+        }
+    }
+}
+
+input:focus {
+    outline: none;
+}

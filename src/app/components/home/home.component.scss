@@ -1,0 +1,176 @@
+@import '../../../global/variables';
+@import '../../../global/grid';
+
+
+.content-area {
+    margin-left: 220px;
+    padding: 15px;
+
+    .heading {
+        h1 {
+            color: purple;
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: #7f8c8d;
+            font-size: .8rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .cards {
+        overflow: auto;
+        margin-bottom: 30px;
+        .card {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            height: 300px;
+
+            .user-img {
+                background: url("../../../assets/img/matthew.png") center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                margin-right: 15px;
+                width: 115px;
+                height: 115px;
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+
+            .user-name {
+                font-size: 1rem;
+                color: purple;
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .user-title {
+                display: block;
+                font-size: .9rem;
+                text-align: center;
+                margin: 10px 0;
+                color: #5b5e5e;
+            }
+
+            .joined {
+                font-size: .8rem;
+                color: #7f8c8d;
+            }
+
+            .join-date {
+                font-size: .8rem;
+                color: #7f8c8d;
+            }
+
+            h6 {
+                font-size: 0.8rem;
+                color: #99a1a1;
+            }
+
+            .date {
+                font-size: 1.3rem;
+                color: #757777;
+                display: block;
+                border-left: 5px solid $neonBlue;
+                position: relative;
+                left: -20px;
+                padding: 5px 30px;
+                margin: 20px 0;
+                display: block;
+            }
+
+            .list-item {
+                margin: 20px;
+            }
+
+            .expense-type {
+                background: orange;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                font-size: 0.6rem;
+                color: #fff;
+                padding: 4.5px;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .expense {
+                font-size: 0.8rem;
+                font-weight: 300;
+                margin-bottom: .5rem;
+                
+            }
+
+            .expense-amount {
+                font-weight: 500;
+                margin-left: 5px;
+                margin-bottom: .2rem;
+            }
+
+            .time {
+                display: block;
+                font-size: 0.6rem;
+                font-weight: 400;
+            }
+
+        }
+    }
+}
+
+table {
+    float: left;
+}
+
+.col-md-2 {
+    width: ((2 * 100) / 12 + %);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+}
+
+.col-md-3 {
+    width: ((3 * 100) / 12 + %);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+}
+
+.col-md-4 {
+    width: ((4 * 100) / 12 + %);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+}
+
+.col-md-7 {
+    width: ((7*100) / 12 + %);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 1px;
+}
+
+.col-md-9 {
+    width: ((9 * 100) / 12 + %);
+    padding: 0 15px;
+    display: inline-block;
+    float: left;
+}
+
+.col-md-10 {
+    width:  83.33%;
+    padding: 0 15px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+}

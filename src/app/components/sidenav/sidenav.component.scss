@@ -1,0 +1,54 @@
+@import '../../../global/variables';
+@import '../../../global/grid';
+
+#sideMenu {
+    background: $purpleLight;
+    width: 220px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    nav {
+        padding-top: 100px;
+
+        a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-weight: 300;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background: $purpleDark;
+                border-right: 5px solid $neonBlue;
+                padding: 15px 30px 15px 25px;
+            }
+
+            .fa {
+                color: $blueDark;
+            }
+        }
+
+        .fa {
+            color: $greyDark;
+            font-size: 1.4rem;
+            margin-right: 0.8rem;
+            display: inline-block;
+            width: 30px;
+            position: relative;
+            top: 2px;
+        }
+
+        &.active {
+            background: $purpleDark;
+            border-right: 5px solid $neonBlue;
+            padding: 15px 30px 15px 25px;
+
+            .fa {
+                color: $neonBlue;
+            }
+        }
+    }
+}
